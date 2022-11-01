@@ -22,33 +22,37 @@
       <div class="container navigation">
         <nav class="site-nav">
           <a href="./index.html" lang="en" class="logo">
-            <span class="logo-web">Web</span
-            ><span class="logo-studio">Studio</span>
+            <span class="logo__web">Web</span
+            ><span class="logo__studio">Studio</span>
           </a>
-          <ul class="site-nav list">
-            <li class="site-nav-item">
-              <a class="site-nav-link current" href="./index.html">Студія</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link" href="./portfolio.html">Портфоліо</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="site-nav-item">
-              <a class="site-nav-link" href="#">Контакти</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="site-nav-item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16px" height="12px">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="site-nav-item">
-            <a class="contacts-link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10px" height="16px">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -58,61 +62,61 @@
       </div>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Основні переваги</h2>
-          <ul class="advantages-list list">
-            <li class="avantages-item">
-              <div class="advantages-icon-block">
-                <svg class="advantages-icon" width="70" height="70">
+          <ul class="advantages__list list">
+            <li class="avantages__item">
+              <div class="advantages__icon-wrapper">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantages-secondary-title">Увага до деталей</h3>
-              <p class="advantages-text">
+              <h3 class="advantages__secondary-title">Увага до деталей</h3>
+              <p class="advantages__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="avantages-item">
-              <div class="advantages-icon-block">
-                <svg class="advantages-icon" width="70" height="70">
+            <li class="avantages__item">
+              <div class="advantages__icon-wrapper">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantages-secondary-title">Пунктуальність</h3>
-              <p class="advantages-text">
+              <h3 class="advantages__secondary-title">Пунктуальність</h3>
+              <p class="advantages__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="avantages-item">
-              <div class="advantages-icon-block">
-                <svg class="advantages-icon" width="70" height="70">
+            <li class="avantages__item">
+              <div class="advantages__icon-wrapper">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantages-secondary-title">Планування</h3>
-              <p class="advantages-text">
+              <h3 class="advantages__secondary-title">Планування</h3>
+              <p class="advantages__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="avantages-item">
-              <div class="advantages-icon-block">
-                <svg class="advantages-icon" width="70" height="70">
+            <li class="avantages__item">
+              <div class="advantages__icon-wrapper">
+                <svg class="advantages__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantages-secondary-title">Сучасні технології</h3>
-              <p class="advantages-text">
+              <h3 class="advantages__secondary-title">Сучасні технології</h3>
+              <p class="advantages__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -120,9 +124,9 @@
           </ul>
         </div>
       </section>
-      <section class="section list">
+      <section class="list">
         <div class="container">
-          <h2 class="section-title centered">Чим ми займаємося</h2>
+          <h2 class="section__title centered">Чим ми займаємося</h2>
           <ul class="price-list list">
             <li class="price-list-item">
               <img
@@ -151,9 +155,9 @@
           </ul>
         </div>
       </section>
-      <section class="section team">
+      <section class="team">
         <div class="container">
-          <h2 class="section-title centered">Наша команда</h2>
+          <h2 class="section__title centered">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-cards">
               <img
