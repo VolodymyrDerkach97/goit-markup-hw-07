@@ -88,32 +88,35 @@ img {
     display: flex;
     
 }
-.logo {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
 
+.logo {
+    display: inline-block;
+    
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    color: var(--accent-color); 
     text-decoration: none;
     cursor: pointer;
 }
-.logo__web{
-    padding-top: 24px;
-    padding-bottom: 25px;
 
-    color: #2196f3; 
-    
+.logo__text-studio{
+    color: #000000;  
 }
 
-.logo__studio{
+.header__logo {
     padding-top: 24px;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
 
-    color: #000000;  
+.footer_logo{
+    margin-bottom: 20px;
+}
+
+.logo__text-studio--white {
+    color: var(--primary-white-color); 
 }
 
 .site-nav {
@@ -510,18 +513,7 @@ img {
 .footer__address-wrapper {
     margin-right: 70px;
 }
-.logo-footer{
-    display: inline-block;
-    margin-bottom: 20px;
 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .footer__maps-link {
     padding-right: 25px;
@@ -533,13 +525,7 @@ img {
     
 }
 
-.logo-web-footer{
-    color: #2196f3; 
-}
 
-.logo-studio-footer{
-    color: #ffffff; 
-}
 
 .footer__maps-link {
    
