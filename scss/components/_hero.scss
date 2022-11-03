@@ -49,3 +49,21 @@
 //     cursor: pointer;
 // }
 
+
+.hero-button {
+    padding: 10px 32px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--cubic-bezier-primary), 
+                box-shadow 250ms var(--cubic-bezier-primary); 
+
+    background-color: var(--accent-color); 
+    color: var(--primary-white-color);   
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}

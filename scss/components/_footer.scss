@@ -174,31 +174,9 @@
     border-color:var(--accent-color);
 }
 
-.footer__subscribe-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 
-    max-height: 50px;
-    padding: 10px 28px;
-    border: 0px solid transparent;
-    border-radius: 4px;
-
-    transition: background-color 250ms var(--cubic-bezier-primary), 
-                box-shadow 250ms var(--cubic-bezier-primary); 
-
-    background-color: var(--accent-color); 
-    color: var(--primary-white-color);   
-    font-style: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-}
-
-.footer__subscribe-button:hover,
-.footer__subscribe-button:focus {
+.footer__button:hover,
+.footer__button:focus {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
