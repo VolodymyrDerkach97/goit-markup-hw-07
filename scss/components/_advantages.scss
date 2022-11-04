@@ -5,6 +5,7 @@
     padding-bottom: 94px;
 }
  .advantages__list {
+   @extend %list;
     display: flex;
  }
 

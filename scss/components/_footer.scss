@@ -25,8 +25,6 @@
     
 }
 
-
-
 .footer__maps-link {
    
     transition: color 250ms $cubic-bezier-primary;
@@ -52,6 +50,10 @@
     cursor: pointer;
 }
 
+.footer__address-list {
+    @extend %list;
+}
+
 .footer__address-item:not(:last-child){
     margin-bottom: 9px;
 }
@@ -68,6 +70,7 @@
 }
 
 .footer__follow-list {
+    @extend %list;
     display: flex;
 
 }

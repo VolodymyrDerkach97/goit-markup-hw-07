@@ -3,5 +3,6 @@
 }
 
 .team-section__list {
+    @extend %list;
     display: flex;
 }

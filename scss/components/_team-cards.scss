@@ -38,6 +38,7 @@
 }
 
 .team-cards__net {
+    @extend %list;
     display: flex;
     justify-content: center;
     gap: 10px;

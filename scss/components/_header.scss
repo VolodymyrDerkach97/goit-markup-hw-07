@@ -13,6 +13,7 @@
 }
 
 .site-nav__list{
+    @extend %list;
     display: flex;
     align-items: center;
 }
@@ -29,6 +30,7 @@
     transition: color 250ms $cubic-bezier-primary; 
 
     color: $color-title-text;
+    font-family: $font-family-primaty;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

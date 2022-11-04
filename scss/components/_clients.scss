@@ -1,8 +1,11 @@
 .clients {
+    @extend %list;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
+
 
 .clients__item {
     width: calc((100% - 5*30px) / 6);
