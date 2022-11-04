@@ -11,37 +11,20 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+
+    &__title {
+        height: 120px;
+        width: 696px;
+        margin: 0 auto;
+        margin-bottom: 30px;
     
+        color:$color-white-primary; 
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+   
 }
 
-.hero__title {
-    height: 120px;
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-
-    color:$color-white-primary; 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-.hero-button {
-    padding: 10px 32px;
-    border: 0px solid transparent;
-    border-radius: 4px;
-
-    transition: background-color 250ms $cubic-bezier-primary, 
-                box-shadow 250ms $cubic-bezier-primary; 
-
-    background-color: $color-accent; 
-    color: $color-white-primary;   
-    font-style: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-}

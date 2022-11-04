@@ -8,10 +8,15 @@
     color: $color-accent; 
     text-decoration: none;
     cursor: pointer;
+
+    
+    &__text-studio{
+    color: $color-logo-secondary;  
 }
 
-.logo__text-studio{
-    color: $color-logo-secondary;  
+   &__text-studio--white {
+    color: $color-white-primary; 
+}
 }
 
 .header__logo {
@@ -22,8 +27,4 @@
 
 .footer__logo{
     margin-bottom: 20px;
-}
-
-.logo__text-studio--white {
-    color: $color-white-primary; 
 }

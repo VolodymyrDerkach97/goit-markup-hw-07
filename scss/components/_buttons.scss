@@ -25,13 +25,15 @@
 .hero__button {
     padding: 10px 32px; 
     margin: auto;
-}
 
-.hero__button:hover,
-.hero__button:focus {
+    &__button:hover,
+    &__button:focus {
     background-color: $bg-hover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+}
+
+
 
 // Button-footer
 
@@ -40,15 +42,18 @@
     align-items: center;
     gap: 10px;
     padding: 10px 28px;
-}
 
-.footer__button:hover,
-.footer__button:focus {
+    &__button:hover,
+    &__button:focus {
     background-color: $bg-hover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+}
+
+
 
 // Button-close
+
 
 .button-close {
     width: 30px;
@@ -60,41 +65,44 @@
     color: $color-title-text;
     outline: none;
     cursor: pointer;
+
+    .modal__ & {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+       
+    }
+    
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        transition: fill 250ms $cubic-bezier-primary,
+                    translate 250ms $cubic-bezier-primary;
+        fill: currentColor;
+    }
+    
+    &:hover .button-close__icon,
+    &:focus .button-close__icon {
+        fill: $color-accent;
+    }
 }
 
-.modal__button-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-   
-}
 
-.button-close__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    transition: fill 250ms $cubic-bezier-primary,
-                translate 250ms $cubic-bezier-primary;
-    fill: currentColor;
-}
-
-.button-close:hover .button-close__icon,
-.button-close:focus .button-close__icon {
-    fill: $color-accent;
-}
 
 // Modal button
 
 .modal__button {
     margin: auto;
     padding: 10px 52px;
-}
 
-.modal__button:hover,
-.modal__button:focus {
+    &__button:hover,
+    &__button:focus {
     background: $bg-hover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
   
+}
+
