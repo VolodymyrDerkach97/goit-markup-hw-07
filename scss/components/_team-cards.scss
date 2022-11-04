@@ -1,5 +1,5 @@
 .team-cards {
-    background: #ffffff;
+    background: $color-white-primary;
     width: calc((100% - 90px)/4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -22,7 +22,7 @@
     margin-top: 0px;
     margin-bottom: 10px;
 
-    color: var(--title-text-color);
+    color: $color-title-text;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -50,11 +50,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--icon-color);
+    color: $color-icon;
     cursor: pointer;
 
-    transition: color 250ms var(--cubic-bezier-primary),
-                background-color 250ms var(--cubic-bezier-primary);
+    transition: color 250ms $cubic-bezier-primary,
+                background-color 250ms $cubic-bezier-primary;
 }
 
 .team-cards__icon {
@@ -63,6 +63,6 @@
 
 .team-cards__link:hover,
 .team-cards__link:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: $color-white-primary;
+    background-color: $color-accent;
 }

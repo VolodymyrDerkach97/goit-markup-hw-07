@@ -5,31 +5,44 @@
 ;
     margin-bottom: 50px;
 
-    background: var(--primary-white-color);
+    background: $color-white-primary;
     
 }
 
-.portfolio-button-filter.first {
-    padding-right: 25px;
-    padding-left: 25px;
-}
 
-.portfolio-button-filter {
+.portfolio-button__filter {
     padding: 6px 22px;
 
+    text-align: center;
+    font-family: $font-family-primaty;
+    font-style: normal;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 
-    color: var(--title-text-color);
-    background-color: var(--bg-filter-color);
+    transition: color 250ms $cubic-bezier-primary,
+    background-color 250ms $cubic-bezier-primary,
+    border-radius 250ms $cubic-bezier-primary,
+    box-shadow 250ms $cubic-bezier-primary; 
+
+    border: 0px solid transparent;
+    border-radius: 4px;
+    color: $color-title-text;
+    background-color: $bg-color-primary;
+    outline: none;
+    cursor: pointer;
 }
 
-.portfolio-button-filter:hover,
-.portfolio-button-filter:focus {
-    color: #ffffff;
-    background-color: #2196f3;
+.portfolio-buttons__portfolio-button__filter {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.portfolio-button__filter:hover,
+.portfolio-button__filter:focus {
+    color: $color-white-primary;
+    background-color: $color-accent;
     border-radius: 4px;
     
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
