@@ -6,16 +6,16 @@
     height: 100vh;
 
     transform: scale(1);
-    transition: transform 1000ms var(--cubic-bezier-primary),
-                 opacity 1000ms var(--cubic-bezier-primary);
+    transition: transform 1000ms $cubic-bezier-primary,
+                 opacity 1000ms $cubic-bezier-primary;
    
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $bg-backdrop;
 }
 
 .backdrop.is-hidden {
     transform: scale(0);
-    transition: transform 1000ms var(--cubic-bezier-primary),
-                opacity 1000ms var(--cubic-bezier-primary),
-                visibility 1000ms var(--cubic-bezier-primary);
+    transition: transform 1000ms $cubic-bezier-primary,
+                opacity 1000ms $cubic-bezier-primary,
+                visibility 1000ms $cubic-bezier-primary;
 
 }

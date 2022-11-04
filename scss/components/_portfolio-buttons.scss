@@ -1,6 +1,8 @@
 .portfolio-buttons {
     display: flex;
     justify-content: center;
+    gap: 8px
+;
     margin-bottom: 50px;
 
     background: var(--primary-white-color);
@@ -15,26 +17,14 @@
 .portfolio-button-filter {
     padding: 6px 22px;
 
-    transition: color 250ms var(--cubic-bezier-primary),
-                background-color 250ms var(--cubic-bezier-primary),
-                border-radius 250ms var(--cubic-bezier-primary),
-                box-shadow 250ms var(--cubic-bezier-primary);
-
-    color: #212121;
-    background-color: #f5f4fA;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    cursor: pointer;
-    border: 0px solid transparent;
-    border-radius: 4px;
-}
+    line-height: 1.62;
 
-.portfolio-buttons__item:not(:last-child) {
-    margin-right: 8px;
+    color: var(--title-text-color);
+    background-color: var(--bg-filter-color);
 }
-
 
 .portfolio-button-filter:hover,
 .portfolio-button-filter:focus {
