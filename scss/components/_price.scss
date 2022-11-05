@@ -5,12 +5,13 @@
     &__item {
         position: relative;
         width: calc((100% - 60px)/3);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
     
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
-    
+   
     &__title-wrapper {
         position: absolute;
         bottom: 0;
@@ -33,4 +34,3 @@
         text-transform: uppercase;
     }
 }
-

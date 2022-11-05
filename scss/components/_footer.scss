@@ -1,4 +1,4 @@
-.footer{
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -36,7 +36,15 @@
         line-height: 1.71;
         text-decoration: none;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $color-accent;
+        }
+
     }
+        
+      
     
     &__contact-link {
         transition: color 250ms $cubic-bezier-primary;
@@ -48,6 +56,11 @@
         line-height: 1.71;
         text-decoration: none;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $color-accent;
+        }
     }
     
     &__address-list {
@@ -58,16 +71,6 @@
         margin-bottom: 9px;
     }
     
-    
-    &__maps-link:hover,
-    &__contact-link:hover {
-        color: $color-accent;
-    }
-    
-    &__maps-link:focus,
-    &__contact-link:focus {
-        color: $color-accent;
-    }
     
     &__follow-list {
         @extend %list;
@@ -107,6 +110,11 @@
         color: $color-white-primary;
         cursor: pointer;
     
+        &:hover,
+        &:focus {
+                  color: $color-white-primary;
+                  background-color: $color-accent;
+         }
        
     }
     
@@ -117,12 +125,6 @@
     
     &__follow-icon {
         fill: currentColor;
-    }
-    
-    &__follow-link:hover,
-    &__follow-link:focus {
-        color: $color-white-primary;
-        background-color: $color-accent;
     }
     
     &__subscribe {
@@ -169,13 +171,11 @@
         border-radius: 4px;
         outline: none;
     
-    }
-    
-    &__subscribe-email:hover,
-    &__subscribe-email:focus {
+        &:hover,
+        &:focus {
         border-color: $color-accent;
+        }
     }
-    
     
     &__subscribe-icon {
       fill: currentColor;

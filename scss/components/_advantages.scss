@@ -25,12 +25,12 @@
    &__item {
        width: calc((100% - 3 * 30px)/4);
        margin-right: 30px;
+
+       &:last-child {
+         margin-right: 0;
+      }
     }
     
-    &__item:last-child {
-       margin-right: 0;
-    }
-   
    &__secondary-title {
        margin-top: 0px;
        margin-bottom: 10px;

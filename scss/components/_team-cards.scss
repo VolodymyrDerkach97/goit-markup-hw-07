@@ -55,17 +55,15 @@
     
         transition: color 250ms $cubic-bezier-primary,
                     background-color 250ms $cubic-bezier-primary;
+
+         &:hover,
+         &:focus {
+             color: $color-white-primary;
+             background-color: $color-accent;
+         }            
     }
     
     &__icon {
         fill: currentColor;
     }
-    
-    &__link:hover,
-    &__link:focus {
-        color: $color-white-primary;
-        background-color: $color-accent;
-    }
 }
-
-

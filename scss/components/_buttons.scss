@@ -32,13 +32,6 @@
     padding: 10px 32px; 
     margin: auto;
 }
-
-
-
-
-             
-
-
 // Button-footer
 
 .footer__button {
@@ -51,10 +44,8 @@
     &__button:focus {
     background-color: $bg-hover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   }
 }
-}
-
-
 
 // Button-close
 .modal__button-close {
@@ -75,8 +66,6 @@
     outline: none;
     cursor: pointer;
 
-    
-    
     &__icon {
         position: absolute;
         top: 50%;
@@ -106,7 +95,6 @@
     &__button:focus {
     background: $bg-hover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-  
+  }
 }
 

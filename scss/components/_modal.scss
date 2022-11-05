@@ -9,8 +9,8 @@
     padding: 40px;
     background: $color-white-primary;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);;
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     &__form {
@@ -62,6 +62,8 @@
         border: 1px solid $border-color-form;
         border-radius: 4px;
         outline: none;
+
+        
     }
     
     &__input-wrapper{
@@ -101,18 +103,16 @@
         border: 1px solid $border-color-form;
         border-radius: 4px;
         outline: none;
+
+        &:focus {
+            border-color: $color-accent;
+            fill: $color-accent;
+        }
+
+        &:placeholder-shown {
+            color: rgba(117, 117, 117, 0.5);
+        }
     }
-    
-    &__comment:focus {
-        border-color: $color-accent;
-        fill: $color-accent;
-    }
-    
-    &__comment:placeholder-shown {
-        color: rgba(117, 117, 117, 0.5);
-    }
-    
-    
     
     &__checkbox-label{
         display: flex;
@@ -130,7 +130,6 @@
         appearance: none;
     }
     
-    
     &__checbox-castom{
         position: relative;
         display: flex;
@@ -146,30 +145,31 @@
         cursor: pointer;
        
     }
+
+    &__checkbox:checked + &__checbox-castom {
+        background-color: $color-accent;
+        border-color: transparent;
+    }
+
     &__checkbox-icon {
         fill: $color-white-primary;
         border-radius: 2px;
       
     }
     
-    
-    
-    &__checkbox:checked + &__checbox-castom {
-        background-color: $color-accent;
-        border-color: transparent;
-    }
-    
     &__checkbox-link {
         color: $color-accent;
         text-decoration: underline;
         outline: none;
+
+        &:focus {
+            border: 1px solid $color-accent;
+            border-radius: 2px;
+            z-index: 1;
+        }
     }
     
-    &__checkbox-link:focus {
-        border: 1px solid $color-accent;
-        border-radius: 2px;
-        z-index: 1;
-    }
+   
 }
 
 .is-hidden {
@@ -177,4 +177,3 @@
     opacity: 0;
     pointer-events: none;
 }
-

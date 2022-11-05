@@ -22,19 +22,15 @@
     
         transition: color 250ms $cubic-bezier-primary,
                     border-color 250ms $cubic-bezier-primary;
+
+    &:hover,
+    &:focus {
+            color: $color-accent;
+            border-color: $color-accent;
+    }
     }
     
     &__icon {
         fill: currentColor;
     }
-    
-    
-    &__link:hover,
-    &__link:focus {
-        color: $color-accent;
-        border-color: $color-accent;
-    }
 }
-
-
-
