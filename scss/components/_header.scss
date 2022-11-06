@@ -7,7 +7,6 @@
     }
 }
 
-
 .site-nav {
     display: flex;
     align-items: center;
@@ -38,30 +37,29 @@
         text-decoration: none;
         cursor: pointer;
         
-    }
-    &__link:hover,
-    &__link:focus {
+        &:hover,
+        &:focus {
         color: $color-accent; 
         
+    }
     }
     
     &__link--current {
         color: $color-accent;
     
-    }
-    
-    &__link--current:after {
-        position: absolute;
-        bottom: 0;
-    
-        display: block;
-        content: "";
-        width: 100%;
-        height: 4px;
-    
-        background-color: $color-accent;
-        border-radius: 2px;
-    
+        &:after {
+            position: absolute;
+            bottom: 0;
+        
+            display: block;
+            content: "";
+            width: 100%;
+            height: 4px;
+        
+            background-color: $color-accent;
+            border-radius: 2px;
+        
+        }
     }
 }
 
@@ -93,15 +91,14 @@
         letter-spacing: 0.02em;
         text-decoration: none;
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+        color: $color-accent; 
+       } 
     }
     
     &__icon {
         fill: currentColor;
     }
-    
-    &__link:hover,
-    &__link:focus {
-        color: $color-accent; 
-    } 
 }
-

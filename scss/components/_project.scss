@@ -1,4 +1,4 @@
-.portfolio-card {
+.project {
     position: relative;
     width: calc((100% - 2*30px)/3);
     border: 1px solid $border-color-primary;
@@ -9,6 +9,14 @@
         color: inherit;
     
         transition: box-shadow 250ms $cubic-bezier-primary; 
+
+        &:hover,
+        &:focus {
+    
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                    0px 4px 4px rgba(0, 0, 0, 0.06), 
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
     }
     
     &__sub {
@@ -41,16 +49,6 @@
         transform: translate(0);
         opacity: 1; 
     }
-    
-    &__link:hover,
-    &__link:focus {
-    
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-                    0px 4px 4px rgba(0, 0, 0, 0.06), 
-                    1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-    
-    
     
     &:not(:nth-child(3n)) {
         margin-right: 30px;
