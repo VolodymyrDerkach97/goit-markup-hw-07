@@ -16,7 +16,13 @@
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                     0px 4px 4px rgba(0, 0, 0, 0.06), 
                     1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+      }
+
+        &:hover .project__sub-overlay,
+        &:focus .project__sub-overlay {
+        transform: translate(0);
+        opacity: 1; 
+      }
     }
     
     &__sub {
@@ -44,11 +50,7 @@
         color: $color-white-primary;
     }
     
-    &__link:hover &__sub-overlay,
-    &__link:focus &__sub-overlay {
-        transform: translate(0);
-        opacity: 1; 
-    }
+   
     
     &:not(:nth-child(3n)) {
         margin-right: 30px;

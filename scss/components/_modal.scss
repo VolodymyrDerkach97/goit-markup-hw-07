@@ -63,8 +63,14 @@
         border-radius: 4px;
         outline: none;
 
+        &:focus,
+        &:focus + .modal__input-icon {
+        border-color: $color-accent;
+        fill: $color-accent;
+    }
         
     }
+    
     
     &__input-wrapper{
         position: relative;
@@ -83,11 +89,7 @@
                     border-color 250ms $cubic-bezier-primary;
     }
     
-    &__input:focus,
-    &__input:focus + &__input-icon {
-        border-color: $color-accent;
-        fill: $color-accent;
-    }
+    
     
     &__comment {
         display: block;
@@ -124,10 +126,17 @@
         font-size: 14px;
         line-height: 1.71;
         color: $color-text-primary;
+
+        cursor: pointer;
         
     }
     &__checkbox {
         appearance: none;
+
+        &:checked + .modal__checbox-castom {
+            background-color: $color-accent;
+            border-color: transparent;
+        }
     }
     
     &__checbox-castom{
@@ -146,10 +155,7 @@
        
     }
 
-    &__checkbox:checked + &__checbox-castom {
-        background-color: $color-accent;
-        border-color: transparent;
-    }
+   
 
     &__checkbox-icon {
         fill: $color-white-primary;
