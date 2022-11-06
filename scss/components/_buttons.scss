@@ -1,5 +1,11 @@
 .button {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px;
+
     font-family: $font-family-primaty;
     font-style: normal;
     font-weight: 700;
@@ -34,19 +40,10 @@
 }
 
 
-
-
-             
-
-
 // Button-footer
 
 .footer__button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 28px;
-
+    
     &__button:hover,
     &__button:focus {
     background-color: $bg-hover;
@@ -100,8 +97,7 @@
 
 .modal__button {
     margin: auto;
-    padding: 10px 52px;
-
+    
     &__button:hover,
     &__button:focus {
     background: $bg-hover;
