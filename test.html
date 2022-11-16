@@ -5,9 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./test.css" />
   </head>
   <body>
- 
+    <section class="blog-post-section">
+      <div class="container">
+        <div class="blog-post-section__container">
+          <picture>
+            <source
+              media="(min-width: 1360px)"
+              srcset="
+                ./images/blog-post-one-desktop.webp    1x,
+                ./images/blog-post-one-desktop@2x.webp 2x
+              "
+              type="image/webp" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/blog-post-one-tablet.webp    1x,
+                ./images/blog-post-one-tablet@2x.webp 2x
+              "
+              type="image/webp" />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/blog-post-one-mobile.webp    1x,
+                ./images/blog-post-one-mobile@2x.webp 2x
+              "
+              type="image/webp" />
+            <source
+              media="(min-width: 1360px)"
+              srcset="
+                ./images/blog-post-one-desktop.jpg    1x,
+                ./images/blog-post-one-desktop@2x.jpg 2x
+              "
+              type="image/jpg" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/blog-post-one-tablet.jpg    1x,
+                ./images/blog-post-one-tablet@2x.jpg 2x
+              "
+              type="image/jpg" />
+            <img
+              srcset="
+                ./images/blog-post-one-mobile.jpg    1x,
+                ./images/blog-post-one-mobile@2x.jpg 2x
+              "
+              src="./images/blog-post-one-mobile.jpg"
+              alt="learning process"
+          /></picture>
+          <div class="blog-post-section__text-wrapper">
+            <time class="blog-post-section__date" datetime="2020-04-16"
+              >April 16 2020</time
+            >
+            <h2 class="blog-post-section__title">Blog Post One</h2>
+            <p class="blog-post-section__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate, ipsum dignissimos quae laudantium asperiores nam
+              aliquid impedit harum illum dolore explicabo ab dolores itaque
+              rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <a class="blog-post-section__link" href="#">Read Our Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
